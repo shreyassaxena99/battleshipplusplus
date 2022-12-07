@@ -64,19 +64,9 @@ void fillInDirection(char(&d_board)[10][10], int row, int col, ship ship, Direct
     while (size > 0) {
         d_board[row][col] = symbol;
         size--;
-        switch(chosenDirection) {
-            case UP:
-                col--;
-                break;
-            case DOWN:
-                col++;
-                break;
-            case LEFT:
-                row--;
-                break;
-            case RIGHT:
-                row++;
-                break;
-        }
+        if (chosenDirection == UP) {col--;}
+        else if (chosenDirection == DOWN) {col++;}
+        else if (chosenDirection == LEFT) {row--;}
+        else if (chosenDirection == RIGHT) {row++;}
     }
 }
