@@ -1,8 +1,13 @@
 #include <iostream>
 #include "board.h"
+#include <stdlib.h>
+#include <time.h>
 
 int main() {
-    std::cout << "Hello World";
+    std::cout << "Hello World\n";
+    Board board;
+    board.fillBoard(false);
+    board.printBoard();
     return 0;
 }
 
