@@ -6,7 +6,7 @@
 int main() {
     std::cout << "Hello World\n";
     Board board;
-    board.fillBoard(false);
+    board.fillBoard(true);
     board.printBoard();
     return 0;
 }

@@ -10,7 +10,8 @@ class Board {
         char operator()(const int& row, const int& col) const; // operator overloader to access an element without complicated pointer math - returns the reference
         void printBoard();
         void initBoard(); // theres needs to be some empty string for each part of the grid, otherwise accessing it could throw some unpredictable behavior
-        void addShip(ship ship);
+        void addShipCPU(ship ship);
+        void addShipUser(ship ship);
     private:
         int d_rowCount;
         int d_colCount;
