@@ -6,14 +6,14 @@
 int main() {
     std::cout << "Hello World\n";
     Board board;
-    board.fillBoard(true);
+    board.fillBoard(false);
     board.printBoard();
     return 0;
 }
 
 /*
 
-TASK 1: PLACE BOATS
+TASK 1: PLACE BOATS (DONE)
 
 User should be able to add the positions on a 10x10 ship of 
 the following ships either horizontally or vertically 

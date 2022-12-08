@@ -12,6 +12,8 @@ class Board {
         void initBoard(); // theres needs to be some empty string for each part of the grid, otherwise accessing it could throw some unpredictable behavior
         void addShipCPU(ship ship);
         void addShipUser(ship ship);
+        int  getRowCount() {return d_rowCount;};
+        int  getColCount() {return d_colCount;};
     private:
         int d_rowCount;
         int d_colCount;

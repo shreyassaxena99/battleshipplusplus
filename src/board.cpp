@@ -85,7 +85,7 @@ void Board::addShipUser(ship ship)
     int x;
     int y;
     Direction desiredDirection;
-    std::cout << "Let's first add a " << ship.name <<" for you!\nA " << ship.name << " takes " << ship.size << " spots.\n";
+    std::cout << "Let's add a " << ship.name <<" for you!\nA " << ship.name << " takes " << ship.size << " spots.\n";
     bool addedShip = true;
     do {
         printBoard();
