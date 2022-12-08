@@ -5,7 +5,7 @@
 #include "utils.h"
 #include <time.h>
 
-const char* directionAsString[] = {"UP (0)", "DOWN (1)", "LEFT (2)", "RIGHT (3)"};
+const char* directionAsString[] = {"LEFT (0)", "RIGHT (1)", "UP (2)", "DOWN (3)"};
 
 Board::Board()
 : d_rowCount(10),
@@ -112,7 +112,7 @@ void Board::addShipUser(ship ship)
                 bool validDirection = true;
                 do {
                     int inputtedDirection;
-                    std::cout << "Please enter a number between 0 (UP) and 3 (RIGHT) to specify a valid orientation that is in the list above: ";
+                    std::cout << "Please enter a number between 0 (LEFT) and 3 (DOWN) to specify a valid orientation that is in the list above: ";
                     std::cin  >> inputtedDirection;
                     if (std::find(availableDirections.begin(), availableDirections.end(), inputtedDirection) == availableDirections.end()) {
                         std::cout << directionAsString[inputtedDirection] << " is not one of the available directions for this ship. Please enter an available direction for the ship \n";
