@@ -1,13 +1,13 @@
 #include <iostream>
-#include "board.h"
+#include "user.h"
+#include "cpu.h"
 #include <stdlib.h>
 #include <time.h>
 
 int main() {
-    std::cout << "Hello World\n";
-    Board board;
-    board.fillBoard(false);
-    board.printBoard();
+    std::cout << "Hello World\n\n\n";
+    User shreyas("shreyas");
+    CPU easy("easy");
     return 0;
 }
 

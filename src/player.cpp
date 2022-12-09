@@ -15,10 +15,10 @@ void Player::reportResults() {
     int y = *(d_nextTarget + 1);
     char resultCode = d_targets(x,y);
     if (resultCode == 'M') {
-        std::cout << "NOTICE: target missed!";
+        std::cout << "NOTICE: target missed!\n";
     } else if (resultCode == 'H')
     {
-        std::cout << "NOTICE: a ship has been hit!";
+        std::cout << "NOTICE: a ship has been hit!\n";
     } else {
         std::cout << "NOTICE: a " << symbolToName[resultCode] << " has been downed!\n";
     }
