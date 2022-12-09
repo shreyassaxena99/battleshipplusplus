@@ -2,12 +2,13 @@
 #define INCLUDE_USER
 
 #include "player.h"
+#include <string>
 
 class User : public Player {
     public:
-        User(char* userName);
+        User(std::string userName);
         void makeTurn();
     private:
-        char* d_userName;
+        std::string d_userName;
 };
 #endif

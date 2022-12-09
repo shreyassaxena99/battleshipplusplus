@@ -1,8 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include "cpu.h"
+#include <string>
 
-CPU::CPU(char* aiName)
+CPU::CPU(std::string aiName)
 : d_aiName(aiName)
 {
     d_targets.initBoard(); // initializes the targets board for the user
@@ -25,7 +26,7 @@ void CPU::makeTurn() {
     do {
         x = rand() % 10;
         y = rand() % 10;
-        isSpotAlreadyAttacked = d_targets(x, y) != ' '
+        isSpotAlreadyAttacked = d_targets(x, y) != ' ';
     } while (isSpotAlreadyAttacked);
     int coordinates[2] = {x, y};
     d_nextTarget = coordinates;

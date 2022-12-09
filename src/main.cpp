@@ -3,6 +3,7 @@
 #include "cpu.h"
 #include <stdlib.h>
 #include <time.h>
+#include <string>
 
 int main() {
     std::cout << "Hello World\n\n\n";

@@ -2,13 +2,13 @@
 #define INCLUDED_CPU
 
 #include "player.h"
+#include <string>
 
 class CPU : public Player {
     public:
-        CPU(char* aiName);
+        CPU(std::string aiName);
         void makeTurn();
     private:
-        char* d_aiName;
-}
-
+        std::string d_aiName;
+};
 #endif

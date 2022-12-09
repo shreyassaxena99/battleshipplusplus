@@ -2,8 +2,9 @@
 #include "board.h"
 #include <iostream>
 #include <unordered_map>
+#include <string>
 
-User::User(char* userName)
+User::User(std::string userName)
 : d_userName(userName)
 {
     std::cout << "Welcome to Battleship++, " << d_userName << "! \n";
