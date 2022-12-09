@@ -1,6 +1,7 @@
 #include "user.h"
 #include "board.h"
 #include <iostream>
+#include <unordered_map>
 
 User::User(char* userName)
 : d_userName(userName)
@@ -9,6 +10,13 @@ User::User(char* userName)
     d_targets.initBoard(); // initializes the targets board for the user
     d_ships.fillBoard(false); // allows the user to add ships to their own board
     d_nextTarget = nullptr;
+    spotsLeft = {
+            {'C', 5},
+            {'B', 4},
+            {'D', 3},
+            {'S', 3},
+            {'P', 2}
+    };
 }
 
 void User::makeTurn()
@@ -38,3 +46,4 @@ void User::makeTurn()
         }
     } while (!targetSet);
 }
+
