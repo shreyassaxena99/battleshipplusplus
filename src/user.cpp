@@ -10,7 +10,7 @@ User::User(char* userName)
     d_targets.initBoard(); // initializes the targets board for the user
     d_ships.fillBoard(false); // allows the user to add ships to their own board
     d_nextTarget = nullptr;
-    spotsLeft = {
+    d_spotsLeft = {
             {'C', 5},
             {'B', 4},
             {'D', 3},

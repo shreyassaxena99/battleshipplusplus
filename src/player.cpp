@@ -31,8 +31,8 @@ void evaluateTurn(Player& attack, Player& defense) {
         attack.d_targets(x,y) = 'M';
     } else {
         char shipAttacked = defense.d_ships(x,y);
-        defense.spotsLeft[shipAttacked]--;
-        if (defense.spotsLeft[shipAttacked] == 0) {
+        defense.d_spotsLeft[shipAttacked]--;
+        if (defense.d_spotsLeft[shipAttacked] == 0) {
             attack.d_targets(x,y) = defense.d_ships(x,y);
         } else {
             attack.d_targets(x,y) = 'H';

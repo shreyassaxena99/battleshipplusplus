@@ -9,7 +9,7 @@ class Player {
         Board d_ships;
         Board d_targets;
         int*  d_nextTarget;
-        std::unordered_map<char, int> spotsLeft;
+        std::unordered_map<char, int> d_spotsLeft;
     public:
         void reportResults();
     friend void evaluateTurn(Player& attack, Player& defense);
